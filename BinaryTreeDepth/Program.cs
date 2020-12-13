@@ -47,7 +47,7 @@ namespace BinaryTreeDepth
 
         public BinaryTree(List<Node> nodes)
         {
-            if (nodes == null && nodes.Any()) 
+            if (nodes == null || !nodes.Any()) 
                 return;
 
             this.root = nodes.First();
